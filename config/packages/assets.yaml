@@ -1,0 +1,4 @@
+framework:
+    assets:
+        pipeline:
+            paths: ['assets/']
