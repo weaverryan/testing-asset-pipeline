@@ -1,3 +1,5 @@
+@import url(more-styles.css);
+
 body {
     background: lightskyblue;
 }
@@ -6,9 +8,4 @@ body {
     padding: 20px;
     margin: 20px;
     border-radius: 5px;
-}
-.skeletor {
-    background-image: url(../images/skeletor.jpg);
-    background-size: cover;
-    background-position: center;
 }
