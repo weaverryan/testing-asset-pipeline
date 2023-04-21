@@ -7,3 +7,8 @@ body {
     margin: 20px;
     border-radius: 5px;
 }
+.skeletor {
+    background-image: url(../images/skeletor.jpg);
+    background-size: cover;
+    background-position: center;
+}
