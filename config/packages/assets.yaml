@@ -1,4 +1,7 @@
 framework:
     assets:
         pipeline:
-            paths: ['assets/']
+            paths:
+#                - assets
+                'assets/': ''
+                'custom_assets': 'custom'
