@@ -1,4 +1,5 @@
 .skeletor {
+    /* refer to images like you normally would */
     background-image: url(../images/skeletor.jpg);
     background-size: cover;
     background-position: center;

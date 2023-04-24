@@ -11,14 +11,13 @@ cd symfony
 git checkout -b asset-pipeline origin/asset-pipeline
 cd ..
 
-# this will error - that's ok!
-composer install
+composer install --no-scripts
 ./symfony/link
 
 symfony serve
 ```
 
-Head to the homepage and enjoy! Features to notice:
+Head to the homepage https://127.0.0.1:8000 and enjoy! Features to notice:
 
 * app.css and app.js are included in base.html.twig with normal `asset()` function, but each gets a versioned filename
 * In the final app.css and app.js, relative import paths are resolved to their digested/versioned filename.

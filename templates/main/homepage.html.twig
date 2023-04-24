@@ -3,14 +3,36 @@
 {% block body %}
     <div class="container">
         <h1>Testing the Asset Pipeline!</h1>
-        <p>Say hello to Skeletor!</p>
 
-        <img
-            src="{{ asset('bundles/easyadmin/images/flags/EU.svg') }}"
-            alt="Testing bundle paths"
-            height="100"
-        >
+        <h3>Include images via CSS or an img tag</h3>
+        <div style="display: flex">
+            <!-- image added in CSS -->
+            <div class="skeletor" style="width: 200px;"></div>
 
-        <div class="skeletor" style="height: 200px; width: 200px;"></div>
+            <img src="{{ asset('images/skeletor.jpg') }}" alt="Skeletor - refer to path relative to assets" width="200">
+        </div>
+
+        <h3>Bundles can also provide assets to the pipeline</h3>
+        <div style="display: flex">
+            <!-- Bundles can expose paths starting with "bundles/bundlename" -->
+            <img
+                src="{{ asset('bundles/easyadmin/images/flags/FR.svg') }}"
+                alt="Testing bundle paths"
+                height="50"
+                style="margin-right: 20px;"
+            >
+
+            <!-- and you can also override bundle assets -->
+            <img
+                src="{{ asset('bundles/easyadmin/images/flags/EU.svg') }}"
+                alt="Testing bundle paths"
+                height="50"
+            >
+        </div>
+
+        <p>
+            This font is big thanks to the "custom.css" included in base.html.twig
+            via a "namespaced" path (see config/packages/asset_pipeline.yaml)
+        </p>
     </div>
 {% endblock %}

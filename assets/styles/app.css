@@ -1,3 +1,6 @@
+/* importing other CSS files works fine *
+/* this path will be updated to point to the real file in the final CSS */
+/* e.g. @import url(/assets/more-styles.abc123.css); */
 @import url(more-styles.css);
 
 body {
@@ -9,4 +12,3 @@ body {
     margin: 20px;
     border-radius: 5px;
 }
-/*# sourceMappingURL=./app.css.map */
