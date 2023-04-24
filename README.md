@@ -3,29 +3,16 @@
 First, prep your symfony/symfony checkout for the new AssetPipeline branch:
 
 ```
-# clone symfony/symfony repository somewhere
-cd /path/to/symfony
-git remote add weaverryan git@github.com:weaverryan/symfony.git
-git fetch weaverryan
-git checkout -b asset-pipeline weaverryan/asset-pipeline
-```
-
-Now, somewhere else, grab this project
-
-```
-git@github.com:weaverryan/testing-asset-pipeline.git
+git clone git@github.com:weaverryan/testing-asset-pipeline.git
 cd testing-asset-pipeline
-```
 
-Open `composer.json` and change the `repositories[0].url` to be the path
-on your filesystem to the `symfony/symfony` check out.
+git clone git@github.com:weaverryan/symfony.git
+cd symfony
+git checkout -b asset-pipeline origin/asset-pipeline
+cd ..
 
-Then finish setup!
-
-```
-composer install
-cd /path/to/this/app
-/path/to/symfony/link
+composer up
+./symfony/link
 
 symfony serve
 ```
