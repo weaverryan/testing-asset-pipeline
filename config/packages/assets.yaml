@@ -1,7 +1,0 @@
-framework:
-    assets:
-        pipeline:
-            paths:
-#                - assets
-                'assets/': ''
-                'custom_assets': 'custom'

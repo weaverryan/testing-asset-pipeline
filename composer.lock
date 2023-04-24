@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a0b917297435a567e5e0ef70b172af8a",
+    "content-hash": "4512a710368d78cc3608123f71ccad14",
     "packages": [
         {
             "name": "doctrine/cache",
@@ -1595,6 +1595,51 @@
                 }
             ],
             "time": "2023-02-14T08:44:56+00:00"
+        },
+        {
+            "name": "symfony/asset-pipeline",
+            "version": "6.3.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "../../symfony/src/Symfony/Component/AssetPipeline",
+                "reference": "2b57961e919011f532ea75843f981f0f3e5c1340"
+            },
+            "require": {
+                "php": ">=8.1",
+                "symfony/filesystem": "^5.4|^6.0",
+                "symfony/mime": "^5.4|^6.0"
+            },
+            "require-dev": {
+                "symfony/http-foundation": "^5.4|^6.0",
+                "symfony/http-kernel": "^5.4|^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\AssetPipeline\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Compiles and moves directories of assets into a public directory.",
+            "homepage": "https://symfony.com",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "symfony/cache",
@@ -6165,7 +6210,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "symfony/asset-pipeline": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

@@ -9,6 +9,7 @@
         "ext-iconv": "*",
         "easycorp/easyadmin-bundle": "^4.6",
         "symfony/asset": "6.2.*",
+        "symfony/asset-pipeline": "*@dev",
         "symfony/console": "6.2.*",
         "symfony/dotenv": "6.2.*",
         "symfony/flex": "^2",
@@ -74,5 +75,11 @@
         "symfony/debug-bundle": "6.2.*",
         "symfony/stopwatch": "6.2.*",
         "symfony/web-profiler-bundle": "6.2.*"
-    }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../symfony/src/Symfony/Component/AssetPipeline"
+        }
+    ]
 }

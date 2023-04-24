@@ -1,0 +1,7 @@
+framework:
+    asset_pipeline:
+        paths:
+#            - assets
+            # the more complex config format with namespaced paths
+            'assets/': ''
+            'custom_assets': 'custom'
