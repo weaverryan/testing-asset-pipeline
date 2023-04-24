@@ -1,24 +1,24 @@
 {
     "type": "project",
     "license": "proprietary",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
         "php": ">=8.1",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "easycorp/easyadmin-bundle": "^4.6",
-        "symfony/asset": "6.3.*@dev",
+        "symfony/asset": "6.3.*",
         "symfony/asset-pipeline": "*@dev",
-        "symfony/console": "6.3.*@dev",
-        "symfony/dotenv": "6.3.*@dev",
+        "symfony/console": "6.3.*",
+        "symfony/dotenv": "6.3.*",
         "symfony/flex": "^2",
-        "symfony/framework-bundle": "6.3.*@dev",
-        "symfony/mime": "6.3.*@dev",
+        "symfony/framework-bundle": "6.3.*",
+        "symfony/mime": "6.3.*",
         "symfony/monolog-bundle": "^3.0",
-        "symfony/runtime": "6.3.*@dev",
-        "symfony/twig-bundle": "6.3.*@dev",
-        "symfony/yaml": "6.3.*@dev",
+        "symfony/runtime": "6.3.*",
+        "symfony/twig-bundle": "6.3.*",
+        "symfony/yaml": "6.3.*",
         "twig/extra-bundle": "^2.12|^3.0",
         "twig/twig": "^2.12|^3.0"
     },
@@ -67,14 +67,14 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "6.3.*@dev",
+            "require": "6.3.*",
             "docker": true
         }
     },
     "require-dev": {
-        "symfony/debug-bundle": "6.3.*@dev",
-        "symfony/stopwatch": "6.3.*@dev",
-        "symfony/web-profiler-bundle": "6.3.*@dev"
+        "symfony/debug-bundle": "6.3.*",
+        "symfony/stopwatch": "6.3.*",
+        "symfony/web-profiler-bundle": "6.3.*"
     },
     "repositories": [
         {
