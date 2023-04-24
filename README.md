@@ -11,7 +11,8 @@ cd symfony
 git checkout -b asset-pipeline origin/asset-pipeline
 cd ..
 
-composer up
+# this will error - that's ok!
+composer install
 ./symfony/link
 
 symfony serve
