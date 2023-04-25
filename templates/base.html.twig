@@ -9,14 +9,7 @@
             <link rel="stylesheet" href="{{ asset('custom/custom.css') }}">
         {% endblock %}
 
-        <!-- just an example of how if we DID have an importmap, we could import this in app.js -->
-        <script type="importmap">
-            {
-                "imports": {
-                    "@hotwired/turbo": "https://esm.sh/@hotwired/turbo@7.3.0"
-                }
-            }
-        </script>
+        {{ importmap() }}
 
         {% block javascripts %}
             <script src="{{ asset('app.js') }}" defer type="module"></script>
