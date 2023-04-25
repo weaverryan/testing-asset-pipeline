@@ -1,10 +1,10 @@
-# Asset Pipeline Test
+# Asset Mapper Test
 
-First, prep your symfony/symfony checkout for the new AssetPipeline branch:
+Just run this stuff:
 
 ```
-git clone git@github.com:weaverryan/testing-asset-pipeline.git
-cd testing-asset-pipeline
+git clone git@github.com:weaverryan/testing-asset-pipeline.git testing-asset-mapper
+cd testing-asset-mapper
 
 git clone git@github.com:weaverryan/symfony.git
 cd symfony

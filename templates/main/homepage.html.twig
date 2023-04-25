@@ -2,7 +2,7 @@
 
 {% block body %}
     <div class="container">
-        <h1>Testing the Asset Pipeline!</h1>
+        <h1>Testing the Asset Mapper!</h1>
 
         <h3>Include images via CSS or an img tag</h3>
         <div style="display: flex">
@@ -12,7 +12,7 @@
             <img src="{{ asset('images/skeletor.jpg') }}" alt="Skeletor - refer to path relative to assets" width="200">
         </div>
 
-        <h3>Bundles can also provide assets to the pipeline</h3>
+        <h3>Bundles can also provide assets to the mapper</h3>
         <div style="display: flex">
             <!-- Bundles can expose paths starting with "bundles/bundlename" -->
             <img
@@ -32,7 +32,7 @@
 
         <p>
             This font is big thanks to the "custom.css" included in base.html.twig
-            via a "namespaced" path (see config/packages/asset_pipeline.yaml)
+            via a "namespaced" path (see config/packages/asset_mapper.yaml)
         </p>
     </div>
 {% endblock %}

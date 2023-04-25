@@ -1,5 +1,5 @@
 framework:
-    asset_pipeline:
+    asset_mapper:
         paths:
 #            - assets
             # the more complex config format with namespaced paths

@@ -9,7 +9,7 @@
         "ext-iconv": "*",
         "easycorp/easyadmin-bundle": "^4.6",
         "symfony/asset": "6.3.*",
-        "symfony/asset-pipeline": "*@dev",
+        "symfony/asset-mapper": "*@dev",
         "symfony/console": "6.3.*",
         "symfony/dotenv": "6.3.*",
         "symfony/flex": "^2",
@@ -79,7 +79,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "symfony/src/Symfony/Component/AssetPipeline"
+            "url": "symfony/src/Symfony/Component/AssetMapper"
         }
     ]
 }
