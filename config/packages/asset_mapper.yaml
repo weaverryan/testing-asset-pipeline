@@ -1,5 +1,7 @@
 framework:
     asset_mapper:
+        # you could choose get CDN urls from a different source
+        # provider: 'jsdelivr'
         paths:
 #            - assets
             # the more complex config format with namespaced paths

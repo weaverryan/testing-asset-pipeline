@@ -3,6 +3,7 @@
 return [
     'app' => [
         'path' => 'app.js',
+        'preload' => true,
     ],
     '@popperjs/core' => [
         'url' => 'https://ga.jspm.io/npm:@popperjs/core@2.11.7/lib/index.js',

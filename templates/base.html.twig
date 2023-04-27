@@ -9,10 +9,10 @@
             <link rel="stylesheet" href="{{ asset('custom/custom.css') }}">
         {% endblock %}
 
+        {# dumps the import map + a tiny scripe that will execute "asset/app.js" #}
         {{ importmap() }}
 
         {% block javascripts %}
-            <script src="{{ asset('app.js') }}" defer type="module"></script>
         {% endblock %}
     </head>
     <body>
