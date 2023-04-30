@@ -2,8 +2,13 @@ framework:
     asset_mapper:
         # you could choose get CDN urls from a different source
         # provider: 'jsdelivr'
+        extensions:
+            zip: 'application/zip'
         paths:
 #            - assets
             # the more complex config format with namespaced paths
             'assets/': ''
             'custom_assets': 'custom'
+#        importmap_polyfill: bar
+        importmap_script_attributes:
+            data-turbo-track: reload

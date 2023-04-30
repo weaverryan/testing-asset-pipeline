@@ -1,10 +1,10 @@
 // importing relative files works fine
 // the final js will contain the real paths - e.g /assets/other.123abc.js
-import './other';
-import './subdir/delayed_import';
+import './other.js';
+import './subdir/delayed_import.js';
 
-// not related to this feature - see base.html.twig for a manual
-// importmap that makes this work.
+// made possible via the importmap you'll find in your HTML source
+// see importmap.php
 import * as Turbo from '@hotwired/turbo';
 
 const body = document.querySelector('body');
