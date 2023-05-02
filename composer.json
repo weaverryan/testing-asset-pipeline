@@ -9,7 +9,7 @@
         "ext-iconv": "*",
         "easycorp/easyadmin-bundle": "^4.6",
         "symfony/asset": "6.3.*",
-        "symfony/asset-mapper": "*@dev",
+        "symfony/asset-mapper": "6.3.*",
         "symfony/console": "6.3.*",
         "symfony/dotenv": "6.3.*",
         "symfony/flex": "^2",
@@ -77,11 +77,5 @@
         "symfony/debug-bundle": "6.3.*",
         "symfony/stopwatch": "6.3.*",
         "symfony/web-profiler-bundle": "6.3.*"
-    },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "symfony/src/Symfony/Component/AssetMapper"
-        }
-    ]
+    }
 }

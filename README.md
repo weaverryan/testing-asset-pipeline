@@ -6,13 +6,7 @@ Just run this stuff:
 git clone git@github.com:weaverryan/testing-asset-pipeline.git testing-asset-mapper
 cd testing-asset-mapper
 
-git clone git@github.com:weaverryan/symfony.git
-cd symfony
-git checkout -b asset-pipeline origin/asset-pipeline
-cd ..
-
-composer install --no-scripts
-./symfony/link
+composer install
 
 symfony serve
 ```
